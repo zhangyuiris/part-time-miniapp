@@ -1,32 +1,33 @@
 <template lang="pug">
 div.container
   div.header
-    input.searchInput(type="text" name="searchJob" methods="post")
-  div.jobBar.shadow
-    div.row
-      div.col-2
-        img.vertical-middle(src="/static/Smile.png" style="width:80rpx;height:80rpx;padding-top:10rpx;")
-      div.col-10(style="padding-right:0px")
-        div.row
-          div.col-7
-            p 上海轩影影城
-          div.col-3
-            p.price 120元/3小时
-        div.row(style="padding-top:10rpx;")
-          div.col-12
-            span.time  5.12日下午3点
-        div.cube.row
-          div.col-7
-            img(src="/static/clock.png" style="width:30rpx;height:30rpx;")
-            span.time  发布于5.6
-          div.col-3
-            img(src="/static/map.png" style="width:30rpx;height:30rpx;")
-            span.place  宝山区
-    
+    input.searchInput(type="text" name="searchJob" methods="post" placeholder="搜索你想要的")
+  a(href="")  
+    div.jobBar.shadow
+      div.row
+        div.col-2
+          img.vertical-middle(src="/static/Smile.png" style="width:80rpx;height:80rpx;padding-top:10rpx;")
+        div.col-10(style="padding-right:0px")
+          div.row
+            div.col-7
+              p 上海轩影影城
+            div.col-3
+              p.price 120元/3小时
+          div.row(style="padding-top:10rpx;")
+            div.col-12
+              span.time  5.12日下午3点
+          div.cube.row
+            div.col-7
+              img(src="/static/clock.png" style="width:30rpx;height:30rpx;")
+              span.time  发布于5.6
+            div.col-3
+              img(src="/static/map.png" style="width:30rpx;height:30rpx;")
+              span.place  宝山区
+      
         
 
 
-</view>
+
 </template>
 
 <script>
@@ -103,22 +104,7 @@ export default {
   margin-bottom: 28rpx;
 }
 
-.userinfo {  
-  display: flex;  
-  flex-direction: column;  
-  align-items: center;  
-}  
-  
-.userinfo-avatar {  
-  width: 128rpx;  
-  height: 128rpx;  
-  margin: 20rpx;  
-  border-radius: 50%;  
-}  
 
-.info {
-  padding-left: 40rpx;
-}
 .jobName { 
   padding-top: 40rpx; 
   padding-bottom: 40rpx;
@@ -126,11 +112,6 @@ export default {
   font-size: 14px;
 }  
 
-.userinfo-province {  
-  width: 100%;
-  font-size: 12px;
-  color: #aaa;  
-}  
 
 .timeRight {
   font-size: 14px;
