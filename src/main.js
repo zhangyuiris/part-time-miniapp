@@ -40,8 +40,8 @@ export default {
           'text': '求职者'
         },
         {
-          'selectedIconPath': 'static/message.png',
-          'iconPath': 'static/messageFade.png',
+          'selectedIconPath': 'static/publish.png',
+          'iconPath': 'static/publishFade.png',
           'pagePath': 'pages/publish/main',
           'text': '发布者'
         }

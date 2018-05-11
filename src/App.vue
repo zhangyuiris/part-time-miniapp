@@ -12,9 +12,8 @@ export default {
 </script>
 
 <style>
-@import '../static/iconfont.css'
 .column,
-.flex,
+.flex, 
 .row {
   display: -webkit-box;
   display: -ms-flexbox;

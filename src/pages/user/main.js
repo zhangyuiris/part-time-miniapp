@@ -6,6 +6,6 @@ app.$mount()
 
 export default {
   config: {
-    navigationBarTitleText: '个人信息'
+    navigationBarTitleText: '我加入过的兼职'
   }
 }
