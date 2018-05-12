@@ -1,10 +1,11 @@
 import Vue from 'vue'
-import App from './login'
+import App from './register'
 
 const app = new Vue(App)
 app.$mount()
+
 export default {
   config: {
-    navigationBarTitleText: '登录'
+    navigationBarTitleText: '注册'
   }
 }

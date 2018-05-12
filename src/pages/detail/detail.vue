@@ -1,39 +1,37 @@
 <template lang="pug">
   div
     div.row.justify-center(style="margin-top: 5px;")
-      div.card.col-10
+      // div.card.col-10
         div.row.main-info
           div.col-2.avatar-wrapper
-            img.avatar(src="/static/avatar.jpg")
+            img.avatar(src="/static/Smile.png")
           div.col-9.info-wrapper
             div.name kastnerorz
-            div.date 2018-5-7
+            div.date 2018-5-11
       div.card.col-10
-        div.title 救救孩子！孩子的外卖丢了！
+        div.title 推广兼职
         div.tags
           div.tag-wrapper
-            span.tag-name 类别：
-            span.tag 食品
+            span.tag-name 单位：
+            span.tag 上海大学开源社区
           div.tag-wrapper
-            span.tag-name 位置：
-            span.tag D教学楼
-        div.content 中午点的外卖不知道被谁拿走了！不还上本月枪毙名单!
-        div.image-wrapper
-          img.imageItem(src="/static/show1.jpg")
+            span.tag-name 兼职时间：
+            span.tag 2018-5-13
+          div.tag-wrapper
+            span.tag-name 工作位置：
+            span.tag 上海大学计算机学院
+          div.tag-wrapper
+            span.tag-name 工资：
+            span.tag 120元/3小时
+      div.card.col-10
+        div.title 工作内容
+        div.content 帮忙宣传开源社区活动，帮助更多的人来参加小程序设计大赛
       div.card.col-10(style="margin-bottom: 50px;")
         p.title 联系方式
         div.contact-wrapper
-          p.date 电话
           p.name 18101970000
-        div.contact-wrapper
-          p.date 微信
-          p.name kastnerorz
-    div.bottom-bar
-      //- div.bottom-button-wrapper
-      div.bottom-button 首页
-      div.bottom-button 收藏
-      div.bottom-button 分享
-      div.bottom-button 18800000000
+        
+
 </template>
 <script>
 export default { }
@@ -49,7 +47,7 @@ export default { }
   padding: 11px 16px 11px 16px;
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   border-radius: 8px;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 .avatar {
   width: 46px;
@@ -69,7 +67,6 @@ export default { }
 }
 
 .name {
-  font-weight: bold;
   padding-top: 3px;
   font-size: 16px;
 }
@@ -102,7 +99,7 @@ export default { }
 
 .tag {
   border-radius: 4px;
-  background-color: #7eb3ec;
+  background-color: #51b9ca;
   color: #fff;
   font-size: 13px;
   height: 16px;

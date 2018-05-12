@@ -3,19 +3,21 @@
     .content
       h1(square='', flat='', style='position:absolute;top:-5rem;width:100%;')
         div(style='text-align:center;')
-          span(style='font-weight:bold;font-size:1.5rem;color:white;text-shadow:blue 0 1px 0;') SHUhelper 小程序
+          span(style='font-weight:bold;font-size:1.5rem;color:white;text-shadow:green 0 1px 0;') SHU兼职
           br
           small(style='color:white;text-shadow:green 0 1px 0;')
-            span(style='color:red;') ♥
-            //- | meow~
+            span(style='color:white;') ♥
       form
-        input(placeholder="一卡通账号" v-model='form.userID', type='number', required='', float-label='一卡通账号')
+        input(placeholder="请输入手机号" v-model='form.userID', type='number', required='', float-label='用户名')
         //- q-input(v-model='form.userID', type='number', required='', float-label='一卡通账号')
         //- q-input( v-model='form.password', type='password', required='', float-label='密码')
         input(placeholder="请输入密码" v-model='form.password', type='password', required='', float-label='密码')
         //- checkbox(v-model='rememberMe', label='记住我')
-        button.full-width(:plain="true",:size="mini",loader='', color='primary', @click='login',:loading='loginLoading' )
-          | 确认绑定
+        button.col-6(:plain="true",:size="mini",loader='', color='primary', @click='login',:loading='loginLoading' style="margin-bottom:20rpx")
+          | 登录
+        a(href="../register/main")
+          button.col-6
+            | 注册
       div(square='', flat='', style='position:absolute;bottom:-4rem;width:100%;')
         div(style='text-align:center;color:white;font-size:0.8rem;')
           small 上海大学开源社区
@@ -24,7 +26,7 @@
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
       form: {
         userID: '',
@@ -42,15 +44,15 @@ export default {
   //     password: { required }
   //   }
   // },
-  mounted() {
+  mounted () {
     // this.$refs.basicModal.open()
   },
-  beforeDestory() {
+  beforeDestory () {
     // this.$refs.basicModal.close()
     // debugger
   },
   methods: {
-    login() {
+    login () {
       // var _this = this
       // this.$v.form.$touch()
       // if (this.$v.form.$error) {
@@ -86,9 +88,8 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #03a9f4;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-  background: linear-gradient(to bottom, #85b7d8 0%, #44a9fc 100%);
+  background-color: #8eeffc;
+  background-image: linear-gradient(0deg, #8eeffc 0%, #51b9ca 100%);
   height: 100vh; /* Allow spacing based on window height */
   margin: 0;
   min-height: 240px;
@@ -149,12 +150,12 @@ form input {
   font-weight: 300;
 }
 form input:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 form input:focus {
   background-color: white;
   width: 300px;
-  color: #53e3a6;
+  color: black;
 }
 form button {
   -webkit-appearance: none;

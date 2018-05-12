@@ -15,6 +15,7 @@ export default {
       '^pages/home/main',
       'pages/login/main',
       'pages/detail/main',
+      'pages/register/main',
       'pages/publish/main'],
     window: {
       'backgroundTextStyle': 'light',

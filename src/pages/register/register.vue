@@ -3,24 +3,19 @@
     //- img(@click="onAvatarClick",style="height:1.5rem;width:1.5rem;margin:auto;display:block;" class="userinfo-avatar" v-if="user.avatarURL" :src="user.avatarURL" background-size="cover")
     div.form(style="padding:10px;display:flex;flex-direction:column;")
       div.box-form
-        p.title 主题
-        input.title-form(placeholder="请输入兼职主题")
+        p.title 用户名
+        input.title-form
       div.box-form
-        p.title 时间
-        input.title-form(placeholder="请输入兼职时间")
+        p.title 密码
+        input.title-form
       div.box-form
-        p.title 工作地点
-        input.title-form(placeholder="请输入工作地点")
+        p.title 再次输入密码
+        input.title-form
       div.box-form
-        p.title 兼职薪资
-        input.title-form(placeholder="请输入兼职薪资")
+        p.title 手机号
+        input.title-form
       div.box-form
-        p.title 详细信息
-        textarea.description-form(v-model="time" placeholder="请输入详细信息")
-      div.box-form
-        p.title 联系方式
-        input.title-form(placeholder="例：微信：aaaa")
-      button(style="vertical-align: middle;background-color:#51b9ca;color:white" ) 发布
+        button(style="vertical-align: middle;background-color:#51b9ca;color:white" ) 注册
 </template>
 
 <script>

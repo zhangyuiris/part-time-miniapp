@@ -1,30 +1,37 @@
 <template lang="pug">
 div.container
-  div.header
-    input.searchInput(type="text" name="searchJob" methods="post" placeholder="搜索你想要的")
-  a(href="")  
-    div.jobBar.shadow
-      div.row
-        div.col-2
-          img.vertical-middle(src="/static/Smile.png" style="width:80rpx;height:80rpx;padding-top:10rpx;")
-        div.col-10(style="padding-right:0px")
-          div.row
-            div.col-7
-              p 上海轩影影城
-            div.col-3
-              p.price 120元/3小时
-          div.row(style="padding-top:10rpx;")
-            div.col-12
-              span.time  5.12日下午3点
-          div.cube.row
-            div.col-7
-              img(src="/static/clock.png" style="width:30rpx;height:30rpx;")
-              span.time  发布于5.6
-            div.col-3
-              img(src="/static/map.png" style="width:30rpx;height:30rpx;")
-              span.place  宝山区
-      
-        
+  div.header.row
+    div.col-8
+      input.searchInput(type="text" name="searchJob" methods="post" placeholder="搜索你想要的")
+    div.col-2
+      a(href="../publish/main")
+        p(style="color:white") 发布
+    div.col-2
+      a(href="../login/main")
+        p(style="color:white") 登录
+  div
+    a(href="../detail/main")  
+      div.jobBar.shadow
+        div.row
+          div.col-2
+            img.vertical-middle(src="/static/Smile.png" style="width:80rpx;height:80rpx;padding-top:10rpx;")
+          div.col-10(style="padding-right:0px")
+            div.row
+              div.col-7
+                p 上海轩影影城
+              div.col-3
+                p.price 120元/3小时
+            div.row(style="padding-top:10rpx;")
+              div.col-12
+                span.time  5.12日下午3点
+            div.cube.row
+              div.col-7
+                img(src="/static/clock.png" style="width:30rpx;height:30rpx;")
+                span.time  发布于5.6
+              div.col-3
+                img(src="/static/map.png" style="width:30rpx;height:30rpx;")
+                span.time  宝山区
+  
 
 
 
@@ -61,14 +68,14 @@ export default {
 }
 
 .header {
-  padding: 8px 10px 8px 30px;
+  padding: 8px 10px 8px 10px;
   background-color: #51b9ca;
 }
 
 .searchInput {
   background-color: white;
   height:25px;
-  width:250px;
+  width:200px;
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 12px;
   padding-left:10px;
@@ -101,7 +108,7 @@ export default {
   padding: 40rpx;
   height: 180rpx;
   background-color: white;
-  margin-bottom: 28rpx;
+  margin-bottom: 20rpx;
 }
 
 
